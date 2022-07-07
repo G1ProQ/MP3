@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="player-container">
+        <p class="title">Now Playing</p>
+        <div class="player">
+            <div class="poster">
+                <img src="./assets/dongThoiGian.jpg" alt="">
+            </div>
+            <p style="font-weight:600 ;" class="song-name-else">Dòng Thời Gian</p>
+            <p class="song-author-else">Quất Điền</p>
+            <audio class="audio"></audio>
+            <div class="time-process">
+                <span class="current">0:00</span>
+                <div class="process-bar">
+                    <input type="range" class="progress-dot" min="0" max="100" value='0'>
+                    <!-- <div class="progress-"></div> -->
+                </div>
+                <span class="duration">0:00</span>
+            </div>
+            <div class="song-controler">
+                <i class="fa-solid fa-backward prev-btn control-icon"></i>
+                <i class="fa-solid fa-play play-btn  control-icon"></i>
+                <!-- <i class="fa-solid fa-pause pause-btn  control-icon"></i> -->
+                <i class="fa-solid fa-forward next-btn control-icon"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="song-list-container">
+        <p class="title">Song List</p>
+        <div class="song-list"></div>
+    </div>
+
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
